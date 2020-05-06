@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     
-<%@ page import="javax.servlet.*"%>
-<%@ page import="javax.servlet.http.*"%>
-<%@ page import="java.sql.*"%>
-<%@ page import="java.util.*"%>
+
 <%@ page import="com.Hospital"%>
     
     
@@ -57,6 +54,7 @@
 					%>
 				</div>
 				</center>
+		</div>
 		
 				
 

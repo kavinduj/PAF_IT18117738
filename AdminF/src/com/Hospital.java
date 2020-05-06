@@ -78,7 +78,7 @@ public class Hospital extends HttpServlet {
 	 if (con == null)
 	 {return "Error while connecting to the database for reading."; }
 	 // Prepare the html table to be displayed
-	 output = "<table border=\"1\"><tr><th>Hospital_ID</th><th> HospitalName </th><th> Email </th><th> Address </th><th> PhoneNumber </th><th> Reg_Number </th> <th class=\"bg-secondary\"></th> <th class=\"bg-danger\">  </th></tr>";
+	 output = "<table border='1'><tr><th>Hospital_ID</th><th> HospitalName </th><th> Email </th><th> Address </th><th> PhoneNumber </th><th> Reg_Number </th> <th class=\"bg-secondary\"></th> <th class=\"bg-danger\">  </th></tr>";
 	 String query = "select * from registered_hospital";
 	 Statement stmt = con.createStatement();
 	 ResultSet rs = stmt.executeQuery(query);

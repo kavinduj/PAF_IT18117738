@@ -106,23 +106,28 @@ $(document).on(
 
 // CLIENTMODEL=========================================================================
 function validateHForm() {
-	// CODE
+	// name
 	if ($("#HospitalName").val().trim() == "") {
 		return "Insert Hospital Name.";
 	}
-	// NAME
+	// email
 	if ($("#Email").val().trim() == "") {
 		return "Insert Hospital Email.";
 	}
-	// PRICE-------------------------------
+	// address-------------------------------
 	if ($("#Address").val().trim() == "") {
 		return "Insert Hospital Address.";
 	}
-	// PRICE-------------------------------
+	// pNO-------------------------------
 	if ($("#PhoneNumber").val().trim() == "") {
 		return "Insert Hospital Phone number.";
 	}
-	// PRICE-------------------------------
+	
+	var tmpPhoneNo = $("#PhoneNumber").val().trim();
+	if (!$.isNumeric(tmpPhoneNo)) {
+		return "Insert a numerical value for phone number.";
+	}
+	// Reg NO-------------------------------
 	if ($("#Reg_Number").val().trim() == "") {
 		return "Insert Hospital Register number.";
 	}
